@@ -4,8 +4,9 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.get('/users/:id', (req, res) => {
- 
+app.get('/users', (req, res) => {
+  var users = [];
+  res.send(users);
 });
  
 
